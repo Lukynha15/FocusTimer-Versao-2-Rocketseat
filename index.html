@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temporizador">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script src="main.js" type="module" defer></script>
+
+  <title>Focus Timer</title>
+</head>
+<body id="default">
+
+  <main>
+    <section id="timer-content">
+      <div id="timer">
+        <span id="minutes">00</span>
+        <span id="colon">:</span>
+        <span id="seconds">05</span>
+      </div>
+
+      <div id="timer-button" id="controls">
+        <button class="ph ph-play-circle" id="play"><span class="sr-only">Iniciar contador</span></button>
+        <button class="ph ph-stop-circle" id="stop"><span class="sr-only">Pausar contador</span></button>
+        <button class="ph ph-plus-circle" id="plus"><span class="sr-only">Adicionar 5 minutos</span></button>
+        <button class="ph ph-minus-circle" id="minus"><span class="sr-only">Remover 5 minutos</span></button>
+      </div>
+    </section>
+
+    <section id="ambient-content">
+      <div id="ambient">
+        <button class="ph ph-lamp" id="light"><span class="sr-only">Tema de Floresta</span></button>
+        <button class="ph ph-cloud-snow" id="rain"><span class="sr-only">Tema de Chuva</span></button>
+        <button class="ph ph-storefront" id="market"><span class="sr-only">Tema de Cafeteria</span></button>
+        <button class="ph ph-flame" id="fire"><span class="sr-only">Tema de Fogueira</span></button>
+      </div>
+    </section>
+  </main>
+  
+</body>
+</html>

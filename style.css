@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+  --tt-timer-color: #323238;
+
+  --bg-button-hover: #02799D;
+  --bg-button-hover-line: #FFFFFF;
+
+  --bg-button: #E1E1E6;
+  --bg-button-line: #323238;
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+
+  margin: -1px;
+  padding: 0px;
+  border: 0;
+  appearance: none;
+}
+main {
+  height: 100vh;
+  place-items: center;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  margin-inline: auto;
+  max-width: 1280px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+/* GRID DO TIMER */
+#timer-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+#timer-button button {
+  transition: .3s;
+}
+
+#timer-button button:hover {
+  transform: scale(1.1);
+}
+
+#timer-content .ph {
+  font-size: 4.8rem;
+  color: var(--tt-timer-color);
+}
+
+#timer {
+  font-size: 12.6rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: var(--tt-timer-color);
+}
+
+@keyframes finished-timer {
+  0% {transform: scale(1.0);}
+  50% { transform: scale(1.1);}
+  100% {transform: scale(1.0);}
+}
+
+/* GRID DO AMBIENTE */
+#ambient {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+  width: 30.8rem;
+  height: 33.6rem;
+}
+
+#ambient button {
+  background-color: var(--bg-button);
+  border-radius: 2.4rem;
+  transition: .3s;
+}
+
+#ambient button:hover {
+  background-color: var(--bg-button-hover);
+  color: var(--bg-button-hover-line)
+}
+
+#ambient .clicked {
+  background-color: var(--bg-button-hover);
+  color: var(--bg-button-hover-line);
+}
+
+#ambient .ph {
+  font-size: 4.8rem;
+}
+
+/* GRADIENTES */
+.rain{ 
+  background-image: linear-gradient(to right top, #051937, #082f51, #07466b, #045f84, #02799d);
+}
+
+.fire {
+  background-image: linear-gradient(to right top, #051937, #4f2a5b, #9c3462, #d8544c, #ed9121);
+}
+
+.light {
+  background-image: linear-gradient(to right top, #daa520, #b0ab22, #85ad36, #56ac50, #00a86b);
+}
+
+.market {
+  background-image: linear-gradient(to right top, #b87e14, #c49e49, #d1bc78, #e1d9aa, #f5f5dc);
+}
